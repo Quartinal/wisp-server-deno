@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "module": "Node16",
+    // project options
+    "lib": ["ESNext", "DOM"],
+    "outDir": "dist",
+    "removeComments": true,
+    "target": "ESNext",
+
+    // Module resolution
+    "esModuleInterop": true,
+    "moduleResolution": "Node16",
+
+    // Source Map
+    "sourceMap": true,
+
+    // Strict Checks
+    "alwaysStrict": true, // Ensures that your files are parsed in the ECMAScript strict mode, and emit “use strict” for each source file.
+    "allowUnreachableCode": false, // pick up dead code paths
+    "noImplicitAny": true, // In some cases where no type annotations are present, TypeScript will fall back to a type of any for a variable when it cannot infer the type.
+    "strictNullChecks": true, // When strictNullChecks is true, null and undefined have their own distinct types and you’ll get a type error if you try to use them where a concrete value is expected.
+    "allowJs": true,
+    // Linter Checks
+    "noImplicitReturns": true,
+    "noUnusedLocals": false, // Report errors on unused local variables.
+    "noUnusedParameters": false, // Report errors on unused parameters in functions
+    "declaration": true,
+    "checkJs": false,
+    "skipLibCheck": true,
+
+    "resolveJsonModule": false,
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true
+  },
+  "name": "@quartinal/wisp-server-deno",
+  "version": "0.0.1",
+  "exports": "./src/ConnectionHandler.ts"
+}
